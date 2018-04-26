@@ -1,0 +1,9 @@
+{
+  "name": "xmaxjs",
+  "version": "0.0.0",
+  "description": "Xmax blockchain web client",
+  "main": "src/index.js",
+  "author": {
+    "name": ""
+  }
+}
