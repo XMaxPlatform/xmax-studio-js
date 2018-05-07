@@ -5,5 +5,10 @@
   "main": "src/index.js",
   "author": {
     "name": ""
+  },
+  "dependencies": {
+    "xmaxjs-ecc": "file:../xmaxjs-ecc",
+    "xmaxjs-fcbuffer": "file:../xmaxjs-fcbuffer",
+    "xmaxjs-json": "file:../xmaxjs-json"
   }
 }
