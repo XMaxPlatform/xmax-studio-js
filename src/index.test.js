@@ -233,7 +233,7 @@ if(process.env['NODE_ENV'] === 'development') {
     })
 
     it('message to contract', () => {
-      // initaPrivate = '5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3'
+      // testeraPrivate = '5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3'
       // xmax is a bad test case, but it was the only native contract
       const name = 'xmax'
       return XMax.Localnet({signProvider}).contract(name).then(contract => {
