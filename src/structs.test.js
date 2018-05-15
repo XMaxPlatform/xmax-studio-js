@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 const assert = require('assert')
-const Fcbuffer = require('xmaxjs-fcbuffer')
+const Fcbuffer = require('xmaxjs-fcbuffer-lib')
 
 const XMax = require('.')
 

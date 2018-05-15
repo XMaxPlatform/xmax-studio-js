@@ -9,7 +9,7 @@ function AbiCache(network, config) {
   
     /**
       @arg {boolean} force false when ABI is immutable.  When force is true, API
-      user is still free to cache the contract object returned by xmaxjs 
+      user is still free to cache the contract object returned by xmax-studio-js
     */
     function abiAsync(code, force = true) {
       if(force == false && cache[code] != null) {

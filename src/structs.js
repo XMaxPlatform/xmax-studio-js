@@ -1,6 +1,6 @@
-const {PublicKey} = require('xmaxjs-ecc')
-const json = require('xmaxjs-json')
-const Fcbuffer = require('xmaxjs-fcbuffer')
+const {PublicKey} = require('xmaxjs-ecc-lib')
+const json = require('xmaxjs-json-lib')
+const Fcbuffer = require('xmaxjs-fcbuffer-lib')
 const ByteBuffer = require('bytebuffer')
 const assert = require('assert')
 

@@ -1,5 +1,5 @@
 {
-  "name": "xmaxjs",
+  "name": "xmax-studio-js",
   "version": "0.0.1",
   "description": "Xmax blockchain web client",
   "main": "src/index.js",
@@ -23,10 +23,10 @@
     "binaryen": "^37.0.0",
     "bytebuffer": "^5.0.1",
     "create-hash": "^1.1.3",
-    "xmaxjs-api": "file:../xmaxjs-api",
-    "xmaxjs-ecc": "file:../xmaxjs-ecc",
-    "xmaxjs-fcbuffer": "file:../xmaxjs-fcbuffer",
-    "xmaxjs-json": "file:../xmaxjs-json"
+    "xmaxjs-api-lib": "file:../xmaxjs-api-lib",
+    "xmaxjs-ecc-lib": "file:../xmaxjs-ecc-lib",
+    "xmaxjs-fcbuffer-lib": "file:../xmaxjs-fcbuffer-lib",
+    "xmaxjs-json-lib": "file:../xmaxjs-json-lib"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -36,7 +36,7 @@
     "babel-plugin-transform-regenerator": "^6.26.0",
     "browserify": "^14.4.0",
     "mocha": "^3.4.2",
-    "xmaxjs-keygen": "file:../xmaxjs-keygen",
+    "xmaxjs-keygen-lib": "file:../xmaxjs-keygen-lib",
     "mkdirp": "^0.5.1",
     "jsdoc-to-markdown": "^3.0.4"
   },

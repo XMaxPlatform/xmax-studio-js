@@ -1,8 +1,8 @@
 const assert = require('assert')
-const ecc = require('xmaxjs-ecc')
-const Fcbuffer = require('xmaxjs-fcbuffer')
+const ecc = require('xmaxjs-ecc-lib')
+const Fcbuffer = require('xmaxjs-fcbuffer-lib')
 const createHash = require('create-hash')
-const {processArgs} = require('xmaxjs-api')
+const {processArgs} = require('xmaxjs-api-lib')
 const Structs = require('./structs')
 
 module.exports = writeApiGen
@@ -25,7 +25,7 @@ function writeApiGen(Network, network, structs, config) {
   for(let type in Network.schema) {
     if(!/^[a-z]/.test(type)) {
       // Only lower case structs will work in a transaction message
-      // See xmaxjs-json generated.json
+      // See xmaxjs-json-lib generated.json
       continue
     }
     if(type === 'transaction') {
@@ -65,7 +65,7 @@ function writeApiGen(Network, network, structs, config) {
   return merge
 }
 
-/** TODO: tag in the xmaxjs-json */
+/** TODO: tag in the xmaxjs-json-lib */
 const tmpRemoveSet = new Set(
   'account_permission message account_permission_weight signed_transaction ' +
   'key_permission_weight authority blockchain_configuration type_def action ' +
@@ -102,7 +102,7 @@ function WriteApi(Network, network, config, Transaction) {
       }
       const codePromises = []
       codes.forEach(code => {
-        if(code !== 'xmax') { // XMax contract operations are cached in xmaxjs-json (allows for offline transactions)
+        if(code !== 'xmax') { // XMax contract operations are cached in xmaxjs-json-lib (allows for offline transactions)
           codePromises.push(config.abiCache.abiAsync(code))
         }
       })

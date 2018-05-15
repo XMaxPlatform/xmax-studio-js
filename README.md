@@ -1,3 +1,3 @@
-﻿# xmaxjs
+﻿# xmax-studio-js
 
 

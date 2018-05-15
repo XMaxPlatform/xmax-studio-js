@@ -1,9 +1,9 @@
 require("babel-polyfill")
 
-const ecc = require('xmaxjs-ecc')
-const json = require('xmaxjs-json')
-const Fcbuffer = require('xmaxjs-fcbuffer')
-const api = require('xmaxjs-api')
+const ecc = require('xmaxjs-ecc-lib')
+const json = require('xmaxjs-json-lib')
+const Fcbuffer = require('xmaxjs-fcbuffer-lib')
+const api = require('xmaxjs-api-lib')
 
 const Structs = require('./structs')
 const AbiCache = require('./abi-cache')

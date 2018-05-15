@@ -3,7 +3,7 @@ const assert = require('assert')
 
 const XMax = require('.')
 const {ecc} = XMax.modules
-const {Keystore} = require('xmaxjs-keygen')
+const {Keystore} = require('xmaxjs-keygen-lib')
 
 describe('version', () => {
   it('exposes a version number', () => {
@@ -124,7 +124,7 @@ if(process.env['NODE_ENV'] === 'development') {
       })
     })
 
-    it('keyProvider from xmaxjs-keygen', () => {
+    it('keyProvider from xmaxjs-keygen-lib', () => {
       const keystore = Keystore('uid')
       keystore.deriveKeys({parent: wif})
       const xmax = XMax.Localnet({keyProvider: keystore.keyProvider})
