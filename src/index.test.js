@@ -49,15 +49,26 @@ describe('offline', () => {
 if(process.env['NODE_ENV'] === 'development') {
 
   describe('networks', () => {
-    it('testnet', (done) => {
+    it('testnet get_info', (done) => {
       const xmax = XMax.Localnet()
-      xmax.getBlock(1, (err, block) => {
+      xmax.getInfo((err, info) => {
         if(err) {
           throw err
         }
         done()
       })
     })
+
+    //wait function adding
+    // it('testnet', (done) => {
+    //   const xmax = XMax.Localnet()
+    //   xmax.getBlock(1, (err, block) => {
+    //     if(err) {
+    //       throw err
+    //     }
+    //     done()
+    //   })
+    // })
   })
 
   describe('transactions', () => {
