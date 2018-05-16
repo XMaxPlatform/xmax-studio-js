@@ -36,7 +36,7 @@
     "babel-plugin-transform-regenerator": "^6.26.0",
     "browserify": "^14.4.0",
     "mocha": "^3.4.2",
-    "xmaxjs-keygen-lib": "file:../xmaxjs-keygen-lib",
+    "xmaxjs-keygen-lib": "git+https://github.com/XMaxPlatform/xmaxjs-keygen-lib",
     "mkdirp": "^0.5.1",
     "jsdoc-to-markdown": "^3.0.4"
   },
