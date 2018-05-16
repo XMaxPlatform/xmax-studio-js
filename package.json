@@ -23,10 +23,10 @@
     "binaryen": "^37.0.0",
     "bytebuffer": "^5.0.1",
     "create-hash": "^1.1.3",
-    "xmaxjs-api-lib": "file:../xmaxjs-api-lib",
-    "xmaxjs-ecc-lib": "file:../xmaxjs-ecc-lib",
-    "xmaxjs-fcbuffer-lib": "file:../xmaxjs-fcbuffer-lib",
-    "xmaxjs-json-lib": "file:../xmaxjs-json-lib"
+    "xmaxjs-api-lib": "git+https://github.com/XMaxPlatform/xmaxjs-api-lib.git",
+    "xmaxjs-ecc-lib": "git+https://github.com/XMaxPlatform/xmaxjs-ecc-lib.git",
+    "xmaxjs-fcbuffer-lib": "git+https://github.com/XMaxPlatform/xmaxjs-fcbuffer-lib.git",
+    "xmaxjs-json-lib": "git+https://github.com/XMaxPlatform/xmaxjs-json-lib.git"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
