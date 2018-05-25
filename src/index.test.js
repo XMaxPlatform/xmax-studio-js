@@ -353,20 +353,19 @@ if(process.env['NODE_ENV'] === 'development') {
     })
   })
 
-  if(process.env['CURRENCY_ABI'] != null) {
+  if(process.env['TESTCONTRACT_ABI'] != null) {
     it('Transaction ABI lookup', async function() {
       const xmax = XMax.Localnet()
       const tx = await xmax.transaction(
         {
-          scope: ['testera', 'testerb'],
+          scope: ['testera'],
           messages: [
             {
-              code: 'currency',
-              type: 'transfer',
-              data: {
-                from: 'testera',
-                to: 'testerb',
-                quantity: '13'
+              code: 'testcontract',
+              type: 'testaction',
+              data: { 
+                account: 'testera',             
+                quantity: '10'
               },
               authorization: [{
                 account: 'testera',
@@ -378,10 +377,10 @@ if(process.env['NODE_ENV'] === 'development') {
         {sign: false, broadcast: false}
       )
       console.log('tx', tx)
-      assert.equal(tx.transaction.messages[0].code, 'currency')
+      assert.equal(tx.transaction.messages[0].code, 'testcontract')
     })
   } else {
-    console.log('To run the currency Abi test: deploy the "currency" smart contract, set the CURRENCY_ABI environment variable.');
+    console.log('To run the testcontract Abi test: deploy the "testcontract" smart contract, set the TESTCONTRACT_ABI environment variable.');
   }
 
 } // if development
